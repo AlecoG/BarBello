@@ -1,0 +1,61 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Hace que los botones se ajusten en pantallas más pequeñas */
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .custom-button {
+    display: flex;
+    align-items: center;
+    background-color: #d3d3d3; /* Color gris */
+    border: 2px solid #a9a9a9; /* Borde más oscuro */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #b0b0b0; /* Color más oscuro al pasar el ratón */
+  }
+  
+  .custom-button .icon {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+  }
+  
+  .custom-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .custom-button img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .custom-button img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
