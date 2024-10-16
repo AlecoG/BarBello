@@ -1,3 +1,11 @@
+# BarBello
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
 .button-container {
   display: flex;
   justify-content: center;
@@ -8,42 +16,19 @@
 .button-wrapper {
   display: flex;
   justify-content: center;
-  background-color: #dfdede;
-  border-radius: 15px;
-  
 }
 
-.custom-icon {
+.custom-button {
   display: flex;
-  /* Ícono encima del texto */
-  
-  
+  flex-direction: column; /* Para colocar el ícono encima del texto */
+  align-items: center;
+  background-color: #d3d3d3; /* Color gris */
+  border: 2px solid #a9a9a9; /* Borde más oscuro */
   border-radius: 15px; /* Menos redondeado */
   padding: 20px 40px; /* Botón más grande */
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-sizing: border-box; /* Para que padding y borde no afecten el tamaño del botón */
-  width: 145px; /* Puedes ajustar el ancho si es necesario */
-  text-align: center;
-  overflow: hidden; /* Evita que el contenido se salga */
-}
-
-.custom-button {
-  display: flex;
-  flex-direction: column;/* Ícono encima del texto */
-  align-items: center;
-  background-color: #d3d3d3; /* Color gris */
-  border: 2px solid #a9a9a9; /* Borde más oscuro */
-  border-radius: 15px; /* Menos redondeado */
-  padding: 20px 110px; /* Botón más grande */
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-sizing: border-box; /* Para que padding y borde no afecten el tamaño del botón */
-  width: 150px; /* Puedes ajustar el ancho si es necesario */
-  text-align: center;
-  overflow: hidden; /* Evita que el contenido se salga */
 }
 
 .custom-button:hover {
@@ -59,15 +44,10 @@
   height: 40px;
 }
 
-.button-text {
-  white-space: nowrap; /* Evita que el texto se parta en varias líneas */
-}
-
 @media (max-width: 768px) {
   .custom-button {
     font-size: 16px;
     padding: 15px 30px;
-    width: 120px; /* Ajusta el ancho en pantallas más pequeñas */
   }
 
   .custom-button img {
@@ -80,7 +60,6 @@
   .custom-button {
     font-size: 14px;
     padding: 10px 20px;
-    width: 100px; /* Ajusta el ancho en pantallas más pequeñas */
   }
 
   .custom-button img {
@@ -88,3 +67,36 @@
     height: 30px;
   }
 }
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="button-container">
+        <div class="button-wrapper">
+          <button class="custom-button">
+            <div class="icon">
+              <!-- Aquí puedes agregar el ícono -->
+              <img src="images/icons/peluqueria.png" alt="Icono 1">
+            </div>
+            <div class="button-text">Botón 1</div>
+          </button>
+        </div>
+      
+        <div class="button-wrapper">
+          <button class="custom-button">
+            <div class="icon">
+              <!-- Aquí puedes agregar el ícono -->
+              <img src="images/icons/tijeras.png" alt="Icono 2">
+            </div>
+            <div class="button-text">Botón 2</div>
+          </button>
+        </div>
+      </div>
+      
+
+</body>
+</html>
